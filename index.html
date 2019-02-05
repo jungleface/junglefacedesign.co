@@ -1,0 +1,73 @@
+<!doctype HTML>
+<HTML>
+<head>
+    <title>jungleface designs co</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="browser%20icon.JPG">
+    <meta name="Jake" content="design-co">
+    </head>
+    <body>
+        <header> 
+            <div class="top-bar">
+                <nav class="navigation">
+                <a class="active" href="index.html">PORTFOLIO</a>
+                <a href="about.html">ABOUT</a>
+                <a href="brand.html">BRAND</a>
+                <a href="contact.html">CONTACT</a>
+                <a href="shop.html">SHOP</a>    
+                    </nav>
+            <img class="bar-icon" src="page%20logo.JPG">       
+                </div>
+        </header>
+            
+        <section>
+        <div class="mainpage-banner">
+  <img class="mySlides" src="Portfolio/ClientWork/Fiend/fiend%20banner.jpg" style="width: 100%">
+  <img class="mySlides" src="Portfolio/ClientWork/Anytrek/Anytrek%20Banner(web).jpg" style="width:100%">
+  <img class="mySlides" src="Portfolio/ClientWork/Fiend/homeInvaders-banner.jpg" style="width: 100%">
+  <img class="mySlides" src="img_forest.jpg" style="width:100%">
+            <div class="buttons">
+  <button class="left-button" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="right-button" onclick="plusDivs(1)">&#10095;</button>
+              </div>
+</div>
+            </section>
+            
+        
+        <div class="portfolio-section">
+            <div class="column">
+            <p class="sub-heading">Portfolio</p>    
+            <div class="row">
+                <img class="portfolio-link" src="Portfolio/ClientWork/Anytrek/Untitled-1.jpg">
+                        <a href="fiend.html">
+                    <img class="portfolio-link" src="Portfolio/ClientWork/Fiend/portfolio-icon.jpg" >
+                            </a>
+                        <a href="homeInvaderz.html">
+                    <img class="portfolio-link" src="Portfolio/ClientWork/Fiend/HI.jpg">
+                            </a>
+                    </div> 
+                </div>
+            </div>
+        
+    <script>
+       var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+            showDivs(slideIndex += n); 
+        }
+        
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides")
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display ="none";
+            }
+            x[slideIndex-1].style.display = "block";
+        }
+    </script>
+    
+    
+</HTML>
